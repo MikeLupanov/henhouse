@@ -16,7 +16,7 @@ a
 
 .full
 {
-  background: url('../images/bg.png') center / cover;
+  background: url('../images/bg.jpg') center / cover;
 }
 
 /**** Header ****/
@@ -180,7 +180,7 @@ a
 
 .jctf-task
 {
-  min-width: 230px;
+  width: 230px;
 }
 
 .jctf-auth, .jctf-check-flag
@@ -195,24 +195,38 @@ a
 
 #description-footer .mdl-textfield
 {
+  margin: 0 15px;
   width: -moz-max-content;
 }
 
 .jctf-task-block, .jctf-description, .jctf-scoreboard, .jctf-auth, .jctf-simple-card, .jctf-check-flag
 {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: column wrap;
+
   background-color: #fff;
   color: #494747;
   border-radius: 4px;
+
   word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+
   text-decoration: none;
+
   -ms-touch-action: manipulation;
   touch-action: manipulation;
+
   text-align: center;
   border: none;
+  
   -webkit-box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.18);
   -moz-box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.18);
   box-shadow: 0 1px 8px 1px rgba(0, 0, 0, 0.18);
@@ -282,7 +296,13 @@ a
   display: inline-table;
   overflow: hidden;
   white-space: normal;
-  word-break: normal;
+
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+
   font-size: 18px;
   border-spacing: 0;
   width: 100%;
@@ -326,7 +346,7 @@ a
 
   #description-header
   {
-    padding: 0 50px 25px 50px;
+    padding: 0 0 25px 0;
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
@@ -351,6 +371,8 @@ a
 #description-footer>form
 {
   display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
@@ -398,6 +420,26 @@ a
       box-shadow: none;
   }
 
+#get-vpn-key-form 
+{
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+#get-vpn-key-form .mdl-textfield 
+{
+  margin: 0 15px;
+  width: -moz-max-content;
+}
+
+#get-vpn-key-form .mdl-textfield__label
+{
+  top: 18px;
+}
 
 .jctf-task-block:hover
 {
@@ -494,8 +536,17 @@ a
 
   #description-header
   {
+    padding: 0 0 10px 0;
+    font-size: 18px;
+    line-height: 25px;
     word-break: break-all;
   }
+
+  #description-body 
+  {
+    font-size: 14px;
+    line-height: 25px;
+}
   
   .jctf-description, .jctf-scoreboard, .jctf-simple-card
   {
