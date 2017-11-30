@@ -302,7 +302,7 @@ func taskHandler(w http.ResponseWriter, r *http.Request) {
 
 	var submitForm string
 	if taskSolvedBy(task, teamID) {
-		submitForm = "Already solved"
+		submitForm = `<div id="already-solved">Already solved</div>`
 	} else {
 		submitForm = fmt.Sprintf(flagSubmitFormat, task.ID)
 	}

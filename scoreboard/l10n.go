@@ -33,6 +33,8 @@ var l10nMap = map[string]string{
 	"Access token": "Токен доступа",
 	"Sign in":      "Войти",
 
+	`id="already-solved">Already solved</div>`: `id="already-solved">Задача решена</div>`,
+
 	"Solved":       "Флаг принят",
 	"Invalid flag": "Неправильный флаг",
 
