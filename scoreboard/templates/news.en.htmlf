@@ -55,7 +55,44 @@
         <div class="jctf-content__cards mdl-grid">
           <div class="jctf-content__simple-card mdl-cell mdl-cell--12-col mdl-grid">
             <div class="jctf-simple-card mdl-cell mdl-cell--12-col">
-              All you need is love^Wtranslate.
+              <div class="jctf-simple-card__block">
+                <h4>News and hints</h4>
+                  News and hints are published in telegram channel: 
+                  <a href="https://t.me/juniors_ctf" target="_blank">https://t.me/juniors_ctf</a>.
+              </div>
+              <div class="jctf-simple-card__block">
+                <h4>Flag format</h4>
+                In order to avoid cheating we accept only formalized flag format, not a regular expression flag.
+                <br>
+                In most cases the flag is an English string (may contain numbers and other symbols), if it is not defined in the task.
+              </div>
+              <div class="jctf-simple-card__block">
+                <h4>Points for solving tasks</h4>
+                <div class="mdl-grid mdl-grid--no-spacing">
+                  <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--middle" style="text-align: justify">
+                    At the start the cost of each task is 500 points.
+                    While the number of solutions is growing, tasks are being re-evaluated.
+                    The more teams have solved the task, the “cheaper” it gets. 
+                    The minimum points you can get for solving one task is 100. <br>
+                    After your team has sent us a flag, you get the number of points in which the task is evaluated at the moment.
+                    If after that the cost for the task falls, <b>the points of each team are re-evaluated</b>.
+                    Because of that the number of points may change.
+                  </div>
+                  <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--middle">
+                    <img src="http://i.imgur.com/CpVgcCL.png" style="max-width: 100%">
+                  </div>
+                  <div class="jctf-simple-card__block">
+                    <h4>Task status</h4>
+                    <img src="images/closed_task.png" style="padding-right: 7px; width: 25px;">– closed.
+                    <br>
+                    <span style="font-weight: 600; color: #494747">500 </span>– the task is opened, nobody has solved it.
+                    <br>
+                    <span style="font-weight: 600; color: #0db4ca">500 </span>– the task is opened, one or more teams have solved it.
+                    <br>
+                    <span style="font-weight: 600; color: #46c529">500 </span>– your team has solved the task.
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
