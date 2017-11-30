@@ -450,6 +450,7 @@ func Scoreboard(database *sql.DB, game *game.Game,
 	handleStaticFileSimple("/images/401.jpg", wwwPath)
 	handleStaticFileSimple("/images/logo.png", wwwPath)
 	handleStaticFileSimple("/images/closed_task.png", wwwPath)
+	handleStaticFileSimple("/images/score_linear_formula.png", wwwPath)
 
 	// Get
 	http.HandleFunc("/auth.html", signinHandler)

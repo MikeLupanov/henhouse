@@ -78,7 +78,7 @@
                     Таким образом, в ходе соревнований баллы, набранные командой, могут уменьшаться.
                   </div>
                   <div class="mdl-cell mdl-cell--6-col mdl-cell--8-col-tablet mdl-cell--middle">
-                    <img src="http://i.imgur.com/CpVgcCL.png" style="max-width: 100%">
+                    <img src="images/score_linear_formula.png" style="max-width: 100%">
                   </div>
                   <div class="jctf-simple-card__block">
                     <h4>Статус задачи</h4>
