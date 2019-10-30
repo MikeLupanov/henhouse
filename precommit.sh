@@ -17,7 +17,7 @@ function fail() {
 
 rm ${COVERAGE}
 
-for PKG in `go list github.com/jollheef/henhouse/... | tr '\n' ' '`; do
+for PKG in `go list github.com/MikeLupanov/henhouse/... | tr '\n' ' '`; do
     figlet -f big `echo ${PKG} | sed 's|[.a-Z]*/[.a-Z]*/||'`
     echo '---------------' LINT '---------------'
     golint ${PKG} | tee ${TMP} \

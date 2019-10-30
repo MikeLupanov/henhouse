@@ -16,7 +16,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/context"
-	"github.com/jollheef/henhouse/db"
+	"github.com/MikeLupanov/henhouse/db"
 )
 
 const (

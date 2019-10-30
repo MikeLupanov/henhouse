@@ -44,5 +44,5 @@ if [[ "${TRAVIS_GO_VERSION}" != "tip" ]] \
        && [[ "${TRAVIS_BRANCH}" == "master" || "${TRAVIS_TAG}" != "" ]]
 then
     ./clean_packages.py
-    package_cloud push jollheef/henhouse/ubuntu/xenial ${PKGDIR}.deb --skip-errors
+    package_cloud push MikeLupanov/henhouse/ubuntu/xenial ${PKGDIR}.deb --skip-errors
 fi

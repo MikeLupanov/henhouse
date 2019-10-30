@@ -11,7 +11,7 @@ package scoreboard
 import (
 	"testing"
 
-	"github.com/jollheef/henhouse/game"
+	"github.com/MikeLupanov/henhouse/game"
 )
 
 func TestTaskToHTML(*testing.T) {

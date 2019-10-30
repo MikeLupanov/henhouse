@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/jollheef/henhouse.svg?branch=master)](https://travis-ci.org/jollheef/henhouse)
-[![Deb Package](https://img.shields.io/badge/deb-packagecloud.io-844fec.svg)](https://packagecloud.io/jollheef/henhouse)
-[![GoDoc](https://godoc.org/github.com/jollheef/henhouse?status.svg)](http://godoc.org/github.com/jollheef/henhouse)
-[![Coverage Status](https://coveralls.io/repos/jollheef/henhouse/badge.svg?branch=master&service=github)](https://coveralls.io/github/jollheef/henhouse?branch=master)
-[![Go Report Card](http://goreportcard.com/badge/jollheef/henhouse)](http://goreportcard.com/report/jollheef/henhouse)
+[![Build Status](https://travis-ci.org/MikeLupanov/henhouse.svg?branch=master)](https://travis-ci.org/MikeLupanov/henhouse)
+[![Deb Package](https://img.shields.io/badge/deb-packagecloud.io-844fec.svg)](https://packagecloud.io/MikeLupanov/henhouse)
+[![GoDoc](https://godoc.org/github.com/MikeLupanov/henhouse?status.svg)](http://godoc.org/github.com/MikeLupanov/henhouse)
+[![Coverage Status](https://coveralls.io/repos/MikeLupanov/henhouse/badge.svg?branch=master&service=github)](https://coveralls.io/github/MikeLupanov/henhouse?branch=master)
+[![Go Report Card](http://goreportcard.com/badge/MikeLupanov/henhouse)](http://goreportcard.com/report/MikeLupanov/henhouse)
 
 # Henhouse
 
@@ -18,14 +18,14 @@ Fundamental principle: if henhouse is not helping you make jeopardy-style CTF ea
 
 Built for Ubuntu 16.04.
 
-    $ curl -s https://packagecloud.io/install/repositories/jollheef/henhouse/script.deb.sh | sudo bash
+    $ curl -s https://packagecloud.io/install/repositories/MikeLupanov/henhouse/script.deb.sh | sudo bash
     $ sudo apt install henhouse
 
 ### Build deb package from source
 
     $ apt install golang build-essential binutils upx-ucl
-    $ export GOPATH=$(realpath ./) && go get github.com/jollheef/henhouse/...
-    $ cd ${GOPATH}/src/github.com/jollheef/henhouse
+    $ export GOPATH=$(realpath ./) && go get github.com/MikeLupanov/henhouse/...
+    $ cd ${GOPATH}/src/github.com/MikeLupanov/henhouse
     $ ./package.sh
 
 ## Development
@@ -48,7 +48,7 @@ First you need set GOPATH environment variable.
 
 After you need download and build henhouse with depends.
 
-    $ go get github.com/jollheef/henhouse
+    $ go get github.com/MikeLupanov/henhouse
 
 ### Run
 
@@ -62,4 +62,4 @@ After that you need to fix 'connection' parameter in configuration file.
 
 Now, run it!
 
-    $ ${GOPATH}/bin/henhouse ${GOPATH}/src/github.com/jollheef/henhouse/config/henhouse.toml --reinit
+    $ ${GOPATH}/bin/henhouse ${GOPATH}/src/github.com/MikeLupanov/henhouse/config/henhouse.toml --reinit

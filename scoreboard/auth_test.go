@@ -15,7 +15,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/jollheef/henhouse/db"
+	"github.com/MikeLupanov/henhouse/db"
 )
 
 func testDB() (database *sql.DB) {

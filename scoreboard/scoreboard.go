@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/fiam/gounidecode/unidecode"
-	"github.com/jollheef/henhouse/game"
+	"github.com/MikeLupanov/henhouse/game"
 	"golang.org/x/net/websocket"
 )
 

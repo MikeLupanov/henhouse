@@ -19,7 +19,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/jollheef/henhouse/db"
+	"github.com/MikeLupanov/henhouse/db"
 )
 
 // Game struct

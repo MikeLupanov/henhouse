@@ -11,7 +11,7 @@ package scoreboard
 import (
 	"fmt"
 
-	"github.com/jollheef/henhouse/game"
+	"github.com/MikeLupanov/henhouse/game"
 )
 
 func taskSolvedBy(task game.TaskInfo, teamID int) bool {

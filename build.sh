@@ -17,8 +17,8 @@ LDFLAGS="${LDFLAGS} -X main.BuildTime=${BUILD_TIME}"
 
 mkdir -p ${GOPATH}/bin
 
-go build -ldflags "${LDFLAGS}" -o ${GOPATH}/bin/henhouse github.com/jollheef/henhouse
-go build -ldflags "${LDFLAGS}" -o ${GOPATH}/bin/henhousectl github.com/jollheef/henhouse/cli/henhousectl
+go build -ldflags "${LDFLAGS}" -o ${GOPATH}/bin/henhouse github.com/MikeLupanov/henhouse
+go build -ldflags "${LDFLAGS}" -o ${GOPATH}/bin/henhousectl github.com/MikeLupanov/henhouse/cli/henhousectl
 
 END_TIME=`date +%s`
 RUN_TIME=$((END_TIME-START_TIME))

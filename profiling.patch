@@ -3,9 +3,9 @@ index c3faaf2..86edd8f 100644
 --- a/main.go
 +++ b/main.go
 @@ -24,6 +24,7 @@ import (
- 	"github.com/jollheef/henhouse/db"
- 	"github.com/jollheef/henhouse/game"
- 	"github.com/jollheef/henhouse/scoreboard"
+ 	"github.com/MikeLupanov/henhouse/db"
+ 	"github.com/MikeLupanov/henhouse/game"
+ 	"github.com/MikeLupanov/henhouse/scoreboard"
 +	"github.com/pkg/profile"
  	kingpin "gopkg.in/alecthomas/kingpin.v2"
  )

@@ -23,8 +23,8 @@ import (
 	"time"
 
 	"github.com/gorilla/context"
-	"github.com/jollheef/henhouse/db"
-	"github.com/jollheef/henhouse/game"
+	"github.com/MikeLupanov/henhouse/db"
+	"github.com/MikeLupanov/henhouse/game"
 	"golang.org/x/net/websocket"
 )
 

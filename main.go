@@ -20,10 +20,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/jollheef/henhouse/config"
-	"github.com/jollheef/henhouse/db"
-	"github.com/jollheef/henhouse/game"
-	"github.com/jollheef/henhouse/scoreboard"
+	"github.com/MikeLupanov/henhouse/config"
+	"github.com/MikeLupanov/henhouse/db"
+	"github.com/MikeLupanov/henhouse/game"
+	"github.com/MikeLupanov/henhouse/scoreboard"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
 )
 

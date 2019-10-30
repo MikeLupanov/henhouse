@@ -16,7 +16,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/jollheef/henhouse/db"
+	"github.com/MikeLupanov/henhouse/db"
 )
 
 const dbPath string = "user=postgres dbname=henhouse_test sslmode=disable"

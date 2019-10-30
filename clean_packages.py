@@ -5,7 +5,7 @@ import os
 import requests
 
 token = os.getenv("PACKAGECLOUD_TOKEN")
-repository = "jollheef/henhouse"
+repository = "MikeLupanov/henhouse"
 api_url = "https://%s:@packagecloud.io/api/v1/repos/%s/" % (token, repository)
 name = 'henhouse'
 

@@ -25,7 +25,7 @@ script:
   - go list ./... | while read pkg; do go test -v -covermode=count -coverprofile=$(basename ${pkg}).cover ${pkg} || return 1; done
   - ls | grep cover$ | xargs cat | sort -r | uniq >> coverage.out
   - goveralls -coverprofile=coverage.out -service travis-ci
-  - git clone https://github.com/jollheef/henhouse
+  - git clone https://github.com/MikeLupanov/henhouse
   - git checkout ${TRAVIS_COMMIT}
   - cd henhouse
   - PATH=$HOME/.local/bin:$PATH ./package.sh
