@@ -122,6 +122,23 @@ func IsSolved(db *sql.DB, teamID, taskID int) (solved bool, err error) {
 
 	return
 }
+// GetActiveTeamCount return amount of team, who solved anything 
+func GetActiveTeamCount(db *sql.DB) (count int, err error) {
+	stmt, err := db.Prepare("SELECT count(DISTINCT team_id) FROM flag " +  
+		"WHERE solved=TRUE")
+	if err != nil {
+		return
+	}
+
+	defer stmt.Close()
+
+	err = stmt.QueryRow().Scan(&count)
+	if err != nil {
+		return
+	}
+
+	return	
+}
 
 // GetSolvedBy get all team ids who solved task
 func GetSolvedBy(db *sql.DB, taskID int) (teamIDs []int, err error) {

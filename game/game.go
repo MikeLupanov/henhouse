@@ -13,7 +13,7 @@ package game
 import (
 	"database/sql"
 	"log"
-	"math"
+//	"math"
 	"regexp"
 	"sort"
 	"sync"
@@ -92,40 +92,15 @@ func (ti byLevel) Less(i, j int) bool { return ti[i].Level < ti[j].Level }
 // CalcTeamsBase calculate abstract amout of teams
 func CalcTeamsBase(database *sql.DB) (z float64, err error) {
 
-	teams, err := db.GetTeams(database)
+	teams, err := db.GetActiveTeamCount(database)
 	if err != nil {
 		return
 	}
 
-	flags, err := db.GetFlags(database)
-	if err != nil {
-		return
-	}
-
-	k := []int{}
-	for _, t := range teams {
-		solvedCount := 0
-		for _, f := range flags {
-			if f.TeamID == t.ID {
-				solvedCount++
-			}
-		}
-		k = append(k, solvedCount)
-	}
-
-	max := 1
-	for _, ki := range k {
-		if ki > max {
-			max = ki
-		}
-	}
-
-	for _, ki := range k {
-		z += math.Sqrt(float64(ki) / float64(max))
-	}
-
-	if z < 21 {
+	if teams < 21 {
 		z = 21
+	} else {
+		z = float64(teams)
 	}
 
 	return
