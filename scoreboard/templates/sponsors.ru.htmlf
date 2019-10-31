@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-    <title>Juniors CTF</title>
+    <title>Henhouse CTF</title>
   
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -54,8 +54,8 @@
       <main class="jctf-content mdl-layout__content">
         <div class="jctf-content__cards mdl-grid">
           <div class="jctf-content__simple-card mdl-cell mdl-cell--12-col mdl-grid">
-            <div class="jctf-simple-card jctf-no-sponsors mdl-cell mdl-cell--12-col">
-              <img src="images/no_sponsors.jpg" style="max-width: 100%">
+            <div class="jctf-simple-card__block">
+              Работаем на энтузиазме
             </div>
           </div>
         </div>

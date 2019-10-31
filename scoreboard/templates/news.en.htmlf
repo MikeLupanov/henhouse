@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
-    <title>Juniors CTF</title>
+    <title>Henhouse CTF</title>
   
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -57,14 +57,11 @@
             <div class="jctf-simple-card mdl-cell mdl-cell--12-col">
               <div class="jctf-simple-card__block">
                 <h4>News and hints</h4>
-                  News and hints are published in telegram channel: 
-                  <a href="https://t.me/juniors_ctf" target="_blank">https://t.me/juniors_ctf</a>.
+                  News and hints not publising at now. 
               </div>
               <div class="jctf-simple-card__block">
                 <h4>Flag format</h4>
-                In order to avoid cheating we accept only formalized flag format, not a regular expression flag.
-                <br>
-                In most cases the flag is an English string (may contain numbers and other symbols), if it is not defined in the task.
+                There are not format of flag now
               </div>
               <div class="jctf-simple-card__block">
                 <h4>Points for solving tasks</h4>
