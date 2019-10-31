@@ -115,9 +115,9 @@ func NewGame(database *sql.DB, start, end time.Time,
 	g.End = end
 
 	// Default values
-	g.TaskPrice.P200 = 0.50
-	g.TaskPrice.P300 = 0.30
-	g.TaskPrice.P400 = 0.15
+	g.TaskPrice.P200 = 0.70
+	g.TaskPrice.P300 = 0.45
+	g.TaskPrice.P400 = 0.25
 	g.TaskPrice.P500 = 0.10
 
 	g.scoreboardLock = &sync.Mutex{}
