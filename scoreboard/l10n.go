@@ -33,11 +33,13 @@ var l10nMap = map[string]string{
 	"Access token": "Токен доступа",
 	"Sign in":      "Войти",
 
+	`id="already-solved">Already solved</div>`: `id="already-solved">Задача решена</div>`,
+
 	"Solved":       "Флаг принят",
 	"Invalid flag": "Неправильный флаг",
 
-	`btn-submit">Submit</button`: `btn-submit">Отправить</button`,
-	`placeholder="Flag"`:         `placeholder="Флаг"`,
+	`mdl-button--accent">Submit</button>`: `mdl-button--accent">Отправить</button>`,
+	`for="flag-input">Flag</label>`:       `for="flag-input">Флаг</label>`,
 }
 
 var supported = []language.Tag{
