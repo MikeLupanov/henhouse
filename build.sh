@@ -1,4 +1,11 @@
 #!/bin/bash
+if [[ -z $1 ]]
+then
+    ARCH=amd64
+else
+    ARCH=$1
+fi
+
 START_TIME=`date +%s`
 
 RUNDIR=$(pwd)
@@ -17,8 +24,8 @@ LDFLAGS="${LDFLAGS} -X main.BuildTime=${BUILD_TIME}"
 
 mkdir -p ${GOPATH}/bin
 
-go build -ldflags "${LDFLAGS}" -o ${GOPATH}/bin/henhouse github.com/MikeLupanov/henhouse
-go build -ldflags "${LDFLAGS}" -o ${GOPATH}/bin/henhousectl github.com/MikeLupanov/henhouse/cli/henhousectl
+GOOS=linux GOARCH=$ARCH go build -ldflags "${LDFLAGS}" -o ${GOPATH}/bin/henhouse-$ARCH github.com/MikeLupanov/henhouse
+GOOS=linux GOARCH=$ARCH go build -ldflags "${LDFLAGS}" -o ${GOPATH}/bin/henhousectl-$ARCH github.com/MikeLupanov/henhouse/cli/henhousectl
 
 END_TIME=`date +%s`
 RUN_TIME=$((END_TIME-START_TIME))
