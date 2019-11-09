@@ -1,4 +1,5 @@
 #!/bin/bash
+export GOPATH=$HOME/golang
 if [[ -z $1 ]]
 then
     ARCH=amd64
