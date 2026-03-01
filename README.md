@@ -1,9 +1,3 @@
-[![Build Status](https://travis-ci.org/MikeLupanov/henhouse.svg?branch=master)](https://travis-ci.org/MikeLupanov/henhouse)
-[![Deb Package](https://img.shields.io/badge/deb-packagecloud.io-844fec.svg)](https://packagecloud.io/MikeLupanov/henhouse)
-[![GoDoc](https://godoc.org/github.com/MikeLupanov/henhouse?status.svg)](http://godoc.org/github.com/MikeLupanov/henhouse)
-[![Coverage Status](https://coveralls.io/repos/MikeLupanov/henhouse/badge.svg?branch=master&service=github)](https://coveralls.io/github/MikeLupanov/henhouse?branch=master)
-[![Go Report Card](http://goreportcard.com/badge/MikeLupanov/henhouse)](http://goreportcard.com/report/MikeLupanov/henhouse)
-
 # Henhouse
 
 Scoreboard for jeopardy-style CTFs.
@@ -52,10 +46,13 @@ After you need download and build henhouse with depends.
 
 ### Run
 
-    $ sudo psql -U postgres
+    $ sudo -u postgres psql -U postgres
     postgres=# CREATE DATABASE henhouse;
     postgres=# CREATE USER henhouse WITH password 'STRENGTH_PASSWORD';
     postgres=# GRANT ALL privileges ON DATABASE henhouse TO henhouse;
+    postgres=# \c henhouse
+    postgres=# GRANT CREATE ON SCHEMA public TO henhouse;
+
 
 After that you need to fix 'connection' parameter in configuration file.
 (And other parameters, of course)

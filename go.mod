@@ -10,7 +10,7 @@ require (
 	github.com/lib/pq v1.11.2
 	github.com/naoina/toml v0.1.1
 	github.com/olekukonko/tablewriter v0.0.5
-	golang.org/x/net v0.51.0
+	golang.org/x/net v0.50.0
 	golang.org/x/text v0.34.0
 )
 
