@@ -24,7 +24,7 @@ import (
 	"github.com/MikeLupanov/henhouse/db"
 	"github.com/MikeLupanov/henhouse/game"
 	"github.com/MikeLupanov/henhouse/scoreboard"
-	kingpin "gopkg.in/alecthomas/kingpin.v2"
+	kingpin "github.com/alecthomas/kingpin/v2"
 )
 
 var (
