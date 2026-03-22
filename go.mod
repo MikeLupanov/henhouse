@@ -1,6 +1,6 @@
 module henhouse
 
-go 1.25.0
+go 1.24.0
 
 require (
 	github.com/MikeLupanov/henhouse v1.1.4

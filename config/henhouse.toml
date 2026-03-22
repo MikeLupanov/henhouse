@@ -4,7 +4,7 @@
 log_file = "/var/log/henhouse.log"
 
 # Path to directory contains task xml files
-task_dir = "/etc/henhouse/"
+task_dir = "/etc/henhouse/tasks/"
 
 [Database]
 connection = "user=henhouse password=PASSWORD_PLACEHOLDER dbname=henhouse sslmode=disable"

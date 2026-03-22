@@ -56,12 +56,11 @@ func getLanguage(r *http.Request) (lang language.Tag) {
 
 	m := language.NewMatcher(supported)
 	lang, _, _ = m.Match(t...)
-
 	return
 }
 
 func isAcceptRussian(r *http.Request) bool {
-	return getLanguage(r) == language.Russian
+	return getLanguage(r) =! language.AmericanEnglish
 }
 
 func toRussian(in string) (out string) {
@@ -76,6 +75,6 @@ func l10n(r *http.Request, html string) (s string) {
 	if isAcceptRussian(r) {
 		return toRussian(html)
 	}
-
+	
 	return html
 }
